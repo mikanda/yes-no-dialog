@@ -1,0 +1,18 @@
+{
+  "name": "yes-no-dialog",
+  "repo": "mikanda/yes-no-dialog",
+  "description": "A simple wrapper for TJs dialog and bootstraps modal.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "mikanda/bootstrap-dialog": "*",
+    "luka5/bootstrap-buttons": "*",
+    "component/domify": "*",
+    "component/event": "*"
+  },
+  "development": {},
+  "license": "LGPLv3",
+  "scripts": [
+    "index.js"
+  ]
+}
