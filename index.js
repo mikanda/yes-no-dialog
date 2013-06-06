@@ -3,11 +3,13 @@
  */
 var dialog = require('bootstrap-dialog'),
     domify = require('domify'),
-    event = require('event');
+    event = require('event'),
+    Emitter = require('emitter');
 /*
  * create new instance
  */
 function YesNoDialog (title, text, save, cancel, lang) {
+  var self = this;
   /*
    * set default lang if not definied
    */
@@ -35,6 +37,11 @@ function YesNoDialog (title, text, save, cancel, lang) {
     .overlay()
     .movable()
     .show();
+  ['close','hide','show'].forEach(function(event){
+    d.on(event, function () {
+      self.emit(event);
+    });
+  });
 
   /*
    * bind button events and implement standard behaviour
@@ -72,7 +79,9 @@ function YesNoDialog (title, text, save, cancel, lang) {
     }
   );
 };
+Emitter(YesNoDialog.prototype);
 
 module.exports = function (title, text, save, cancel, lang) {
   return new YesNoDialog(title, text, save, cancel, lang);
 };
+

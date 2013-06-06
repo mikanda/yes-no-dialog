@@ -7,8 +7,10 @@
   "dependencies": {
     "mikanda/bootstrap-dialog": "*",
     "luka5/bootstrap-buttons": "*",
+    "luka5/bootstrap-close": "2.3.1",
     "component/domify": "*",
-    "component/event": "*"
+    "component/event": "*",
+    "component/emitter": "1.0.0"
   },
   "development": {},
   "license": "LGPLv3",
