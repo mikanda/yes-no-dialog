@@ -2,7 +2,7 @@
   "name": "yes-no-dialog",
   "repo": "mikanda/yes-no-dialog",
   "description": "A simple wrapper for TJs dialog and bootstraps modal.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [],
   "dependencies": {
     "mikanda/bootstrap-dialog": "*",
