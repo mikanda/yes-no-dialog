@@ -23,9 +23,9 @@ function YesNoDialog (title, text, save, cancel, lang) {
   /*
    * set footer
    */
-  var saveEl = domify('<button class="btn btn-primary">' + lang.save + '</button>')[0];
-  var cancelEl = domify('<button class="btn">' + lang.cancel + '</button>')[0];
-  var footEl = domify('<span></span>')[0];
+  var saveEl = domify('<button class="btn btn-primary">' + lang.save + '</button>');
+  var cancelEl = domify('<button class="btn">' + lang.cancel + '</button>');
+  var footEl = domify('<span></span>');
   footEl.appendChild(cancelEl);
   footEl.appendChild(saveEl);
   

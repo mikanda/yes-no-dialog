@@ -5,11 +5,11 @@
   "version": "0.0.2",
   "keywords": [],
   "dependencies": {
-    "mikanda/bootstrap-dialog": "*",
+    "mikanda/bootstrap-dialog": "0.0.1",
     "luka5/bootstrap-buttons": "*",
     "luka5/bootstrap-close": "2.3.1",
-    "component/domify": "*",
-    "component/event": "*",
+    "component/domify": "1.0.0",
+    "component/event": "0.1.0",
     "component/emitter": "1.0.0"
   },
   "development": {},
