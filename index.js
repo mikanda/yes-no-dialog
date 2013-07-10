@@ -35,7 +35,6 @@ function YesNoDialog (title, text, save, cancel, lang) {
   var d = dialog(title, text, footEl)
     .closable()
     .overlay()
-    .movable()
     .show();
   ['close','hide','show'].forEach(function(event){
     d.on(event, function () {
