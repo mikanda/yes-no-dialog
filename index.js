@@ -32,7 +32,7 @@ function YesNoDialog (title, text, save, cancel, lang) {
   /*
    * make new bootstrap-dialog
    */
-  var d = dialog(title, text, footEl)
+  var d = this.d = dialog(title, text, footEl)
     .closable()
     .overlay()
     .show();
@@ -77,6 +77,12 @@ function YesNoDialog (title, text, save, cancel, lang) {
       }
     }
   );
+};
+YesNoDialog.prototype.show = function () {
+  this.d.show();
+};
+YesNoDialog.prototype.hide = function () {
+  this.d.hide();
 };
 Emitter(YesNoDialog.prototype);
 
